@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+/*Difficulty - EASY*/
 public class SmallestDifference {
     public static void main(String[] args){
         int[] ans = smallestDifference(new int[]{-1, 5, 10, 20, 3}, new int[]{26, 134, 135, 15, 17});
