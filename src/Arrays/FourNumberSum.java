@@ -1,9 +1,11 @@
+package Arrays;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /*Difficulty - EASY*/
-public class MoveElementToEnd {
+public class FourNumberSum {
     public static void main(String[] args){
         printList(moveElementToEnd(new ArrayList<>(Arrays.asList(3, 3, 3, 3, 3, 3, 3)), 3));
     }
