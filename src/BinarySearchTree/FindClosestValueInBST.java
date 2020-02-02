@@ -12,7 +12,6 @@ public class FindClosestValueInBST {
       Space Complexity - O(1) */
     public static int findClosestValue(BST tree, int target, int min, int ans){
         if(tree == null) return ans;
-
         int diff = Math.abs(tree.value - target);
         if(diff < min){
             min = diff;
@@ -23,7 +22,6 @@ public class FindClosestValueInBST {
         } else if(tree.value > target){
             ans = findClosestValue(tree.left, target, min, ans);
         }
-
         return ans;
     }
 
