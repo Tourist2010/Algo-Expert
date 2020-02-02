@@ -30,28 +30,24 @@ public class SameBSTs {
                 break;
             }
         }
-
         for(int i = indexB + 1; i < arrayB.size(); i++){
             if(arrayB.get(i) < arrayB.get(indexB) && arrayB.get(i) >= min){
                 leftB = i;
                 break;
             }
         }
-
         for(int i = indexA + 1; i < arrayA.size(); i++){
             if(arrayA.get(i) >= arrayA.get(indexA) && arrayA.get(i) < max){
                 rightA = i;
                 break;
             }
         }
-
         for(int i = indexB + 1; i < arrayB.size(); i++){
             if(arrayB.get(i) >= arrayB.get(indexB) && arrayB.get(i) < max){
                 rightB = i;
                 break;
             }
         }
-
         return sameBSTHelper(leftA, leftB, arrayA, arrayB, min, arrayA.get(indexA))
                 && sameBSTHelper(rightA, rightB, arrayA, arrayB, arrayA.get(indexA), max);
 
