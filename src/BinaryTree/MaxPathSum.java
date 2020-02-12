@@ -5,6 +5,7 @@ public class MaxPathSum {
         return maxPathSumHelper(tree)[1];
     }
 
+    //Time - O(n) | space = O(log(n)) where n is the number of nodes
     public static int[] maxPathSumHelper(BinaryTree tree){
         if (tree == null) return new int[]{0,0};
         int[] leftSum = maxPathSumHelper(tree.left);
