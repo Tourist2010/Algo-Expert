@@ -2,7 +2,7 @@ package Sorting;
 
 public class Quicksort {
     //Wost - Time O(n^2) | Space O(log(n))
-    //best - Time O(nLog(n)) | Space O(log(n))
+    //Best - Time O(nLog(n)) | Space O(log(n))
     //average - Time O(nLog(n)) | Space O(log(n))
     public static int[] quickSort(int[] array) {
         quickSortHelper(array, 0, array.length-1);
